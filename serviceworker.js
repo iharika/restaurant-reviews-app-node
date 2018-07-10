@@ -55,24 +55,14 @@ self.addEventListener('fetch', function (event) {
                 return response;
             }
             console.log('event request url=' + event.request.url);
-            return fetch(event.request);
+            // return fetch(event.request);
+            return fetch(event.request).then(function (response) {
+                return response;
+            }).catch(function (error) {
+                console.error('Fetching failed:', error);
+                return caches.match('/error_page.html');
+
+            });
         })
     );
 });
-
-
-// self.addEventListener('fetch', function (event) {
-//     var request = event.request;
-//     event.respondWith(
-//         fetch(request, {
-//             credentials: 'include'
-//         })
-//         .catch(function () {
-//             return caches.match(request)
-//                 .then(function (response) {
-//                     return response || caches.match('/offline');
-//                 })
-//         })
-//     );
-
-// });
