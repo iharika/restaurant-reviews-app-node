@@ -23,7 +23,9 @@ function updateStaticCache() {
                 '/serviceworker.js',
                 '/index.html',
                 '/restaurant.html',
-                '/'
+                '/error_page.html',
+                '/',
+                'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css'
             ]);
         });
 };
