@@ -20,7 +20,7 @@ body {
 ul,
 li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 13pt;
   color: #333;
 }
 
@@ -102,7 +102,7 @@ nav h1 a {
 }
 
 #breadcrumb {
-  padding: 10px 40px 16px;
+  padding: 10px 0 16px 6px;
   list-style: none;
   background-color: #eee;
   font-size: 17px;
@@ -253,7 +253,7 @@ nav h1 a {
   height: 10%;
   position: absolute;
   /* right: 0; */
-  top: 170px;
+  top: 116px;
   width: 100%;
 }
 
@@ -272,7 +272,7 @@ nav h1 a {
 #restaurant-name {
   color: #f18200;
   font-family: Arial, sans-serif;
-  font-size: 20pt;
+  font-size: 17pt;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -286,7 +286,7 @@ nav h1 a {
 }
 
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 15pt;
   margin: 10px 0px;
 }
 
@@ -308,12 +308,16 @@ nav h1 a {
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 650px 47px 0px;
   width: 90%;
+  margin: 0;
+}
+
+#restaurant-container {
+  padding: 345px 5% 5%;
 }
 
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 5% 5% 5%;
 }
 
 #reviews-container h2 {
@@ -336,7 +340,7 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 20px 20px 20px;
+  padding: 3% 2% 2% 1%;
   position: relative;
   width: 96%;
   border-radius: 6%;
@@ -348,7 +352,7 @@ nav h1 a {
 
 #restaurant-hours td {
   color: #666;
-  font-size: 20pt;
+  font-size: 9pt;
 }
 
 /* .leaflet-top {
