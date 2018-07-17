@@ -237,6 +237,7 @@ nav h1 a {
   text-transform: uppercase;
   border-radius: 25px;
   width: 50%;
+  margin-top: 3%;
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -361,7 +362,40 @@ nav h1 a {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) and (max-width: 849px) {}
+@media only screen and (min-width: 700px) and (max-width: 849px) {
+  .filter-options select {
+    width: 42%;
+    font-size: 13pt;
+  }
+  .filter-options h2 {
+    width: 20%;
+    font-size: 21px;
+    margin: 0 0 0 20px;
+  }
+  #restaurants-list {
+    padding: 5% 10%;
+  }
+  #restaurants-list li a {
+    padding: 1% 25% 1% 25%;
+  }
+  #restaurant-container,
+  #reviews-container {
+    width: 70%;
+  }
+  #restaurant-container {
+    padding: 345px 15% 5%;
+  }
+  #reviews-container {
+    padding: 5% 15% 5%;
+  }
+  #restaurant-hours td {
+    font-size: 12pt;
+  }
+  nav h1 a {
+    font-size: 25px !important;
+    letter-spacing: 13px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
