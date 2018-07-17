@@ -72,9 +72,9 @@ section {
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 160%;
+  font-size: 8px;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -83,7 +83,7 @@ section {
 
 nav {
   width: 100%;
-  height: 130px;
+  height: 65px;
   background-color: #252831;
   text-align: center;
 }
@@ -95,9 +95,9 @@ nav h1 {
 
 nav h1 a {
   color: #d9d9d9;
-  font-size: 37pt;
+  font-size: 16px !important;
   font-weight: lighter;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   text-transform: uppercase;
 }
 
@@ -141,7 +141,7 @@ nav h1 a {
 /* ====================== Map ====================== */
 
 #map {
-  height: 400px;
+  height: 350px;
   width: 100%;
   background-color: #ccc;
 }
@@ -150,7 +150,7 @@ nav h1 a {
 
 .filter-options {
   width: 100%;
-  height: 100px;
+  height: 58px;
   background-color: #3397db;
   align-items: center;
   display: inline-flex;
@@ -158,23 +158,22 @@ nav h1 a {
 
 .filter-options h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 15px;
   font-weight: normal;
   line-height: 1;
-  margin: 0 20px;
-  width: 33%;
+  margin: 0 10px 0 4px;
+  width: 13%;
 }
 
 .filter-options select {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial, sans-serif;
-  font-size: 23pt;
-  height: 70px;
+  font-size: 10pt;
+  height: 46px;
   letter-spacing: 0;
-  margin: 10px;
-  padding: 0 10px;
-  width: 55%;
+  margin: 2px 4px 2px 2px;
+  width: 85%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -182,20 +181,21 @@ nav h1 a {
 #restaurants-list {
   background-color: #f3f3f3;
   list-style: outside none none;
-  margin: 0;
-  padding: 30px 15px 60px;
+  /* margin: 0;
+  padding: 30px 15px 60px; */
   text-align: center;
+  padding: 5%;
+  margin: 0;
 }
 
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
-  margin: 15px;
-  min-height: 380px;
-  padding: 20px 30px 25px;
+  margin: 0 0 4% 0;
+  padding: 5% 7% 4%;
   text-align: left;
-  width: 90%;
+  width: 85%;
   border-radius: 35px;
 }
 
@@ -230,9 +230,9 @@ nav h1 a {
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 35pt;
-  margin: 15px 25% 0;
-  padding: 8px 30px 10px;
+  font-size: 13pt;
+  margin: 15px 0 0;
+  padding: 8px 78px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -351,28 +351,48 @@ nav h1 a {
   font-size: 20pt;
 }
 
-.leaflet-top {
+/* .leaflet-top {
   top: 60px !important;
-}
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) and (max-width: 849px) {
+  #restaurants-list li a {
+    font-size: 23pt;
+    margin: 15px 33% 0;
+  }
+  .inside #map-container {
+    height: 15%;
+  }
+  #footer {
+    font-size: 80%;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {
-  ...;
+@media only screen and (min-width: 850px) {
+  .filter-options select {
+    height: 46px;
+    font-size: 17pt;
+  }
+  .filter-options {
+    height: 63px;
+  }
+  .filter-options h2 {
+    font-size: 20pt;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   ...;
-}
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   ...;
-}
+} */
