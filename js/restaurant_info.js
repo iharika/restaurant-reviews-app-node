@@ -148,19 +148,50 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
   const li = document.createElement('li');
+  const reviews_header = document.createElement('div');
+  reviews_header.setAttribute("id", "reviews_header");
+
+  const reviews_header_name = document.createElement('div');
+  reviews_header.appendChild(reviews_header_name);
+
+  reviews_header_name.setAttribute("id", "reviews_header_name");
+
+
+  const reviews_header_date = document.createElement('div');
+  reviews_header.appendChild(reviews_header_date);
+
+  reviews_header_date.setAttribute("id", "reviews_header_date");
+
+
+
   const name = document.createElement('p');
   name.innerHTML = review.name;
-  li.appendChild(name);
+  reviews_header_name.appendChild(name);
 
   const date = document.createElement('p');
   date.innerHTML = review.date;
-  li.appendChild(date);
+  reviews_header_date.appendChild(date);
 
+  // const name = document.createTextNode(review.name);
+  // reviews_header.appendChild(name);
+
+  // const date = document.createTextNode(review.date);
+  // reviews_header.appendChild(date);
+
+
+  li.appendChild(reviews_header);
+
+
+
+  const reviews_rating = document.createElement('div');
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
-  li.appendChild(rating);
+  reviews_rating.setAttribute("id", "reviews_rating");
+  reviews_rating.appendChild(rating);
+  li.appendChild(reviews_rating);
 
   const comments = document.createElement('p');
+  comments.setAttribute("id", "reviews_comments");
   comments.innerHTML = review.comments;
   li.appendChild(comments);
 
