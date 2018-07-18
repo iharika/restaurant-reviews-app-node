@@ -222,6 +222,7 @@ nav h1 a {
 #restaurants-list p {
   margin: 0;
   font-size: 15px;
+  color: #565555;
 }
 
 #restaurants-list li a {
@@ -397,6 +398,7 @@ nav h1 a {
 #reviews_comments {
   margin: 11px 0 0 !important;
   padding: 1% 5% 2%;
+  color: #565555;
 }
 
 #reviews_header_name p,
@@ -427,7 +429,7 @@ nav h1 a {
     width: 70%;
   }
   #restaurant-container {
-    padding: 345px 15% 5%;
+    padding: 480px 15% 5%;
   }
   #reviews-container {
     padding: 5% 15% 5%;
@@ -438,6 +440,12 @@ nav h1 a {
   nav h1 a {
     font-size: 25px !important;
     letter-spacing: 13px;
+  }
+  #reviews-list li {
+    border-radius: 31px 0;
+  }
+  #reviews_comments {
+    font-size: 12pt;
   }
 }
 
