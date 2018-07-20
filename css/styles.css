@@ -408,7 +408,7 @@ nav h1 a {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 700px) and (max-width: 849px) {
+@media only screen and (min-width: 700px) and (max-width: 850px) {
   .filter-options select {
     width: 42%;
     font-size: 13pt;
@@ -447,20 +447,115 @@ nav h1 a {
   #reviews_comments {
     font-size: 12pt;
   }
+  #footer {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 850px) {}
+@media only screen and (min-width: 851px) and (max-width: 1200px) {
+  .filter-options select {
+    width: 42%;
+    font-size: 13pt;
+  }
+  .filter-options h2 {
+    width: 20%;
+    font-size: 21px;
+    margin: 0 0 0 20px;
+  }
+  #restaurants-list {
+    padding: 5% 15%;
+  }
+  #restaurants-list li a {
+    padding: 1% 25% 1% 25%;
+  }
+  #restaurant-container,
+  #reviews-container {
+    width: 70%;
+  }
+  #restaurant-container {
+    padding: 480px 15% 5%;
+  }
+  #reviews-container {
+    padding: 5% 15% 5%;
+  }
+  #restaurant-hours td {
+    font-size: 12pt;
+  }
+  nav h1 a {
+    font-size: 25px !important;
+    letter-spacing: 13px;
+  }
+  #reviews-list li {
+    border-radius: 31px 0;
+  }
+  #reviews_comments {
+    font-size: 12pt;
+  }
+  #footer {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+}
 
-/* Large devices (laptops/desktops, 992px and up) */
-
-/* @media only screen and (min-width: 992px) {
-  ...;
-} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-/* @media only screen and (min-width: 1200px) {
-  ...;
-} */
+@media only screen and (min-width: 1200px) {
+  .filter-options select {
+    width: 42%;
+    font-size: 13pt;
+  }
+  .filter-options h2 {
+    width: 20%;
+    font-size: 21px;
+    margin: 0 0 0 20px;
+  }
+  #restaurants-list {
+    padding: 5% 25%;
+  }
+  #restaurants-list li a {
+    padding: 1% 25% 1% 25%;
+  }
+  #restaurant-container,
+  #reviews-container {
+    width: 50%;
+  }
+  #restaurant-container {
+    padding: 480px 25% 5%;
+  }
+  #reviews-container {
+    padding: 5% 25% 5%;
+  }
+  #restaurant-hours td {
+    font-size: 12pt;
+  }
+  nav h1 a {
+    font-size: 25px !important;
+    letter-spacing: 13px;
+  }
+  #reviews-list li {
+    border-radius: 31px 0;
+  }
+  #reviews_comments {
+    font-size: 13pt;
+  }
+  #footer {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+  #reviews_header {
+    padding: 2% 0 0.5% 5%;
+  }
+  #reviews_header_name p {
+    font-size: 18pt;
+  }
+  #reviews_header_date p {
+    font-size: 15pt;
+  }
+  #reviews_rating p {
+    font-size: 13pt;
+  }
+  #reviews_rating {
+    padding: 5px;
+  }
+}
