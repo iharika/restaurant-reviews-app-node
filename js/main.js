@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', event => {
   fetchCuisines();
 });
 
+function FocusOnInput() {
+  document.querySelector('#neighborhoods-select').focus();
+
+}
+
+function FocusOnInputRestaurantPage() {
+  document.querySelector('#restaurant-name').focus();
+}
+
 /**
  * Fetch all neighborhoods and set their HTML.
  */
@@ -169,22 +178,32 @@ createRestaurantHTML = restaurant => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
+  image.alt = `restaurant image of ${restaurant.name}`;
+
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
   li.append(name);
+  name.tabIndex = 0;
+  name.id = "restaurant_name";
+  name.setAttribute('aria-label', `restaurant name ${restaurant.name}`);
+
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
+  neighborhood.tabIndex = 0;
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
   li.append(address);
+  address.tabIndex = 0;
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute('aria-label', 'View more details of this restaurant')
+  more.setAttribute('role', 'button');
   li.append(more);
 
   return li;

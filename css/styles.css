@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+input:focus {
+  background-color: yellow;
+}
+
 body,
 td,
 th,
