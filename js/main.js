@@ -235,10 +235,10 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
-//disabling service worker until styling is complete
+// Registering ServiceWorker 
 
-// if (navigator.serviceWorker) {
-//   navigator.serviceWorker.register('/serviceworker.js', {
-//     scope: '/'
-//   });
-// }
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/serviceworker.js', {
+    scope: '/'
+  });
+}

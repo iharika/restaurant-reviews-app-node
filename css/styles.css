@@ -1,10 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-input:focus {
-  background-color: yellow;
-}
-
 body,
 td,
 th,
@@ -19,6 +15,18 @@ body {
   background-color: #fdfdfd;
   margin: 0;
   position: relative;
+}
+
+#sorryMessage {
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  padding-top: 50px;
 }
 
 ul,
@@ -348,7 +356,7 @@ nav h1 a {
   padding: 0 0 3% 0;
   position: relative;
   width: 100%;
-  border-radius: 6% 1%;
+  border-radius: 20px 1%;
 }
 
 #reviews-list li p {
@@ -410,7 +418,7 @@ nav h1 a {
   color: #f9f9f9;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 700px and up) */
 
 @media only screen and (min-width: 700px) and (max-width: 850px) {
   .filter-options select {
@@ -457,7 +465,7 @@ nav h1 a {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 851px and up) */
 
 @media only screen and (min-width: 851px) and (max-width: 1200px) {
   .filter-options select {
@@ -503,6 +511,8 @@ nav h1 a {
     letter-spacing: 4px;
   }
 }
+
+/* Large devices (laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
   .filter-options select {

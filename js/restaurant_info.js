@@ -174,14 +174,6 @@ createReviewHTML = (review) => {
   const date = document.createElement('p');
   date.innerHTML = review.date;
   reviews_header_date.appendChild(date);
-
-  // const name = document.createTextNode(review.name);
-  // reviews_header.appendChild(name);
-
-  // const date = document.createTextNode(review.date);
-  // reviews_header.appendChild(date);
-
-
   li.appendChild(reviews_header);
 
 
