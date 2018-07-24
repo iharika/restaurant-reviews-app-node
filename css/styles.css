@@ -431,7 +431,9 @@ nav h1 a {
     margin: 0 0 0 20px;
   }
   #restaurants-list {
-    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 50px;
   }
   #restaurants-list li a {
     padding: 1% 25% 1% 25%;
@@ -478,7 +480,9 @@ nav h1 a {
     margin: 0 0 0 20px;
   }
   #restaurants-list {
-    padding: 5% 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 50px;
   }
   #restaurants-list li a {
     padding: 1% 25% 1% 25%;
@@ -525,7 +529,9 @@ nav h1 a {
     margin: 0 0 0 20px;
   }
   #restaurants-list {
-    padding: 5% 25%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px 50px;
   }
   #restaurants-list li a {
     padding: 1% 25% 1% 25%;
