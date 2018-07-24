@@ -119,6 +119,7 @@ nav h1 a {
   background-color: #eee;
   font-size: 17px;
   margin: 0;
+  text-align: left;
 }
 
 /* Display list items side by side */
@@ -220,7 +221,7 @@ nav h1 a {
   border-radius: 35px 5px;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -424,6 +425,9 @@ nav h1 a {
   .filter-options select {
     width: 42%;
     font-size: 13pt;
+  }
+  #restaurants-list li h2 {
+    font-size: 18px;
   }
   .filter-options h2 {
     width: 20%;
