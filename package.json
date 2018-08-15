@@ -19,5 +19,8 @@
   "homepage": "https://github.com/iharika/Restaurant-Reviews-App#readme",
   "dependencies": {
     "http-server": "^0.11.1"
+  },
+  "engines": {
+    "node": "10.4.1"
   }
 }
